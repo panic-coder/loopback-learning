@@ -1,0 +1,42 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "testLoopBack",
+    "password": "",
+    "name": "mongo",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "myEmailDataSource": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "testLoopBack",
+    "password": "",
+    "name": "myEmailDataSource",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "sendEmail": {
+    "name": "sendEmail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "utility.services.development@gmail.com",
+          "pass": "bridgeit0"
+        }
+      }
+    ]
+  }
+}
