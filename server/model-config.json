@@ -49,5 +49,17 @@
   "notes": {
     "dataSource": "mongo",
     "public": true
+  },
+  "user": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "city": {
+    "dataSource": "mongoAtlas",
+    "public": true
+  },
+  "region": {
+    "dataSource": "mongoAtlas",
+    "public": true
   }
 }

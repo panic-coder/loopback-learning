@@ -1,14 +1,21 @@
 'use strict';
 
 module.exports = function(Notes) {
-    Notes.CreateMethod = function(cb){
+    Notes.CreateMethod = function(data,cb){
         var date = new Date();
         var response = date.toString();
-        cb(null, response);
+        Notes.create(data, function(err,userInstance) {
+            console.log(err);
+            
+            console.log(userInstance);
+            cb(null, userInstance);
+        })
+        
     };
     Notes.remoteMethod(
         'CreateMethod', {
-            http: { path: '/shubham', verb: 'get' },
-            returns: { arg: 'shubham', }
+            http: { path: '/create-note', verb: 'post' },
+            accepts: { arg:'options', type: 'object' },
+            returns: { arg: 'shubham', type: 'object' }
     })
 };

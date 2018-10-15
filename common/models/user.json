@@ -1,28 +1,26 @@
 {
-  "name": "notes",
-  "base": "PersistedModel",
+  "name": "user",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
+    "email": {
       "type": "string",
       "required": true
     },
-    "title": {
+    "password": {
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "string",
-      "required": true
+    "dob": {
+      "type": "string"
     },
     "label": {
       "type": [
         "string"
-      ],
-      "required": false
+      ]
     }
   },
   "validations": [],

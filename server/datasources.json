@@ -38,5 +38,15 @@
         }
       }
     ]
+  },
+  "mongoAtlas": {
+    "host": "learning-shard-00-00-29k0z.mongodb.net",
+    "port": 27017,
+    "url": "mongodb://admin:admin@learning-shard-00-00-29k0z.mongodb.net:27017,learning-shard-00-01-29k0z.mongodb.net:27017,learning-shard-00-02-29k0z.mongodb.net:27017/test?ssl=true&replicaSet=Learning-shard-0&authSource=admin&retryWrites=true",
+    "database": "testLoopBack",
+    "password": "admin",
+    "name": "mongoAtlas",
+    "user": "admin",
+    "connector": "mongodb"
   }
 }
